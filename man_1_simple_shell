@@ -60,7 +60,7 @@ searches each element of the PATH for a directory containing an executable file 
 
 If the
 .I name
-start with slash (/), then checks if it is a valid pathname of a executable file and execute them. If it is a directory, an error message is displayed. 
+start with slash (/), then checks if it is a valid pathname of a executable file and execute them. If it is a directory, an error message is displayed.
 
 .SH SHELL BUILTIN COMMANDS
 
