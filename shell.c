@@ -24,14 +24,13 @@ int main(int argc, char **argv, char **env)
 	int exit_st = 0;
 	(void)argc;
 
-
 	while (1)
 	{
 		if (isatty(STDIN_FILENO) == 1)
 			write(1, "($) ", 4);
 		signal(SIGINT, INThandler);
 		line_len = getline(&line, &bufsize, stdin);
-	
+
 		count++;
 		if (special_case(line, line_len, &exit_st) == 3)
 			continue;
